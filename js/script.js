@@ -8,10 +8,10 @@ $(function() {
   });
 
   $('a[href^="#"]').on('click', function() {
-    var speed = 300;
-    var href = $(this).attr("href");
-    var target = $(href == "#" || href == "" ? 'html' : href);
-    var position = target.offset().top;
+    const speed = 300;
+    const href = $(this).attr("href");
+    const target = $(href == "#" || href == "" ? 'html' : href);
+    const position = target.offset().top;
     $("html, body").animate({
       scrollTop: position
     }, speed, "swing");
@@ -27,13 +27,13 @@ $(function() {
   });
 
 
-  var $nav = $('#gnav');
-  var offset = $nav.offset();
-  var navHeight = $nav.innerHeight();
+  let $nav = $('#gnav');
+  let offset = $nav.offset();
+  let navHeight = $nav.innerHeight();
   $('.section').css('padding-top', navHeight / 2);
 
   $(window).on('resize', function() {
-    var currentWidth = window.innerWidth;
+    const currentWidth = window.innerWidth;
     if (currentWidth == window.innerWidth) {
       // ウインドウ横幅が変わっていないため処理をキャンセル
       return;
