@@ -1,4 +1,3 @@
-// PhotoSwipe
 initPhotoSwipeFromDOM('.my-gallery');
 
 $(function() {
@@ -18,7 +17,6 @@ $(function() {
     return false;
   });
 
-  //backToTop
   $('#backToTop').on('click', function() {
     $('body,html').animate({
       scrollTop: 0
@@ -35,7 +33,6 @@ $(function() {
   $(window).on('resize', function() {
     const currentWidth = window.innerWidth;
     if (currentWidth == window.innerWidth) {
-      // ウインドウ横幅が変わっていないため処理をキャンセル
       return;
     }
     $nav = $('#gnav');
