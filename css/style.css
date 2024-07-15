@@ -319,7 +319,7 @@
     position: relative;
     display: inline-block;
     width: 110px;
-    height: 20px;
+    height: auto;
     font-size: 20px;
   }
   
